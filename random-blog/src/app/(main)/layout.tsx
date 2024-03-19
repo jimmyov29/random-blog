@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
 
 export default function RootLayout({
   children,
@@ -5,8 +7,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div className=" flex flex-col h-screen bg-neutral-200">
+      <Header />
+      <main className="w-full h-screen snap-y snap-mandatory overflow-y-auto scroll-smooth">
+        {children}
+        {/* <Footer /> */}
+      </main>
+    </div>
   );
 }

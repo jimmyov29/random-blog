@@ -1,8 +1,10 @@
+import PeopleList from "@/components/PeopleList/PeopleList";
 
 function MainPage() {
   return (
-    <section className="p-4">
-      
+    <section className=" h-screen ">
+        <PeopleList/>
+        
     </section>
   );
 }
